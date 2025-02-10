@@ -1,4 +1,4 @@
-# 3D Visualization of Riemann and Trapezoidal Sums
+# Assinment 2: 3D Visualization of Left Riemann and Trapezoidal Sums
 
 This notebook demonstrates how to visualize numerical integration using the Left Riemann Sum and Trapezoidal Rule in three dimensions.
 
