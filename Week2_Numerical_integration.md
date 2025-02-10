@@ -46,7 +46,10 @@ LeftRiemannSum3DPositive[f_, {a_?NumericQ, b_?NumericQ}, n_Integer?Positive, thi
 ```mathematica
 myPlot = LeftRiemannSum3DPositive[Sin, {0, 2*Pi}, 30, 0.1, False];
 Show[myPlot]
+(* If you installed Mathematcia on your computer *)
 Export["sinPlot1.stl", myPlot];
+(* If you use mathematica online *)
+CloudExport[myPlot, "STL", CloudObject["sinPlot1.stl"]]
 ```
 
 ---
@@ -99,7 +102,22 @@ TrapezoidalSum3D[f_, {a_?NumericQ, b_?NumericQ}, n_Integer?Positive, thickness_?
 ### Example Usage
 
 ```mathematica
+(* Generate the Trapezoidal Sum plot *)
 myTrapezoidalPlot = TrapezoidalSum3D[Sin, {0, Pi}, 10, 0.1, False];
-Show[myTrapezoidalPlot]
-Export["sinTrapezoidalPlot.stl", myTrapezoidalPlot];
+Show[myTrapezoidalPlot];
+
+(* Check if running in the Wolfram Cloud *)
+If[CloudConnectedQ[],
+   (* If using Mathematica Online (Wolfram Cloud) *)
+   cloudObj = CloudExport[myTrapezoidalPlot, "STL", CloudObject["myTrapezoidalPlot.stl"]];
+   Print["Download your STL file here: ", cloudObj],
+   
+   (* If using Mathematica installed on a computer *)
+   localPath = FileNameJoin[{$HomeDirectory, "Downloads", "sinTrapezoidalPlot.stl"}];
+   Export[localPath, myTrapezoidalPlot];
+   Print["File saved locally at: ", localPath];
+   SystemOpen[localPath] (* Open the Downloads folder *)
+]
+
 ```
+
