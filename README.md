@@ -15,7 +15,7 @@ Welcome to the GitHub repository for the 3D printing segment of our Honors Calcu
   
 ## Projects and Materials
 
-### [Riemann Sum Visualization with 3D Printing](RiemannSum.md)
+### [Numerical Integration Visualization with 3D Printing](Week2_Numerical_integration.md)
 
 LeftRiemannSum3DPlotter.m
 - **Objective:** Understand Riemann sums through 3D printed models.
