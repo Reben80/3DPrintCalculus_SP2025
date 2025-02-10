@@ -2,7 +2,7 @@
 
 Welcome to the GitHub repository for the 3D printing segment of our Honors Calculus 2 course at Montgomery College! This course uniquely integrates calculus concepts with 3D printing, specifically using the Bambu Lab Carbon X1. This repository is an open resource for sharing materials, designs, and ideas related to calculus and 3D printing.
 
-## Course Description (under construction )
+## Course Description
 
 
 
