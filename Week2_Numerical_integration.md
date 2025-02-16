@@ -51,7 +51,7 @@ Export["sinPlot1.stl", myPlot];
 (* If you use mathematica online *)
 CloudExport[myPlot, "STL", CloudObject["sinPlot1.stl"]]
 ```
-
+The outcome should be something like this ![image](Media/left.jpeg)
 ---
 
 ## Trapezoidal Rule
