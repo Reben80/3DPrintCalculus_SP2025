@@ -111,4 +111,4 @@ Export["sinPlot1.stl", myPlot];
 CloudExport[myPlot, "STL", CloudObject["sinPlot1.stl"]]
 
 ```
-
+The outcome should be something like this ![image](Media/trap.jpeg)
